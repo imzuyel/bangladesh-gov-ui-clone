@@ -1,0 +1,754 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: url("../images/bg_main.gif") repeat-y scroll center top rgba(0, 0, 0, 0);
+}
+
+.container {
+  position: relative;
+  width: 1020px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+
+/* ====================================================== */
+/* ==================== Topbar style ==================== */
+/* ====================================================== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #9E5BBA;
+  height: 28px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 28px;
+  padding: 0 5px;
+  border-bottom: 1px solid #e40001;
+}
+
+.topbar p {
+  font-size: 16px;
+
+}
+
+.topbar .right {
+  display: flex;
+}
+
+.topbar .right p {
+  font-size: 14px;
+  border-right: 1px solid #b1afb0;
+  padding-right: 5px;
+}
+
+.topbar .right a {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+/* ====================================================== */
+/* ===================== Tobar exit ===================== */
+/* ====================================================== */
+
+/* ====================================================== */
+/* ================= Logo & social icon ================= */
+/* ====================================================== */
+.logosocial {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logosocial .logo {
+  padding: 20px 20px;
+}
+
+.logosocial .right-social .link {
+  display: flex;
+  background: #8CC643;
+  color: #ffffff;
+  padding: 0 4px;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.19),
+    0 2px 0 0 rgba(0, 0, 0, 0.23);
+
+}
+
+.logosocial .right-social .link:hover {
+  background: #E40001;
+}
+
+.logosocial .top-social {
+  display: flex;
+}
+
+.logosocial .right-social .link p {
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.logo .right-social a small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.right-social .link:not(:first-of-type) {
+  border-left: 1px solid #fff;
+
+}
+
+.right-social .bg {
+  border-top: solid 18px #8CC643;
+  border-right: solid 18px #8CC643;
+  border-left: solid 18px transparent;
+  border-bottom: solid 18px transparent;
+}
+
+.bg-hover {
+  border-top: solid 18px #E40001;
+  border-right: solid 18px #E40001;
+  border-left: solid 18px transparent;
+  border-bottom: solid 18px transparent;
+
+}
+
+.bottom-social {
+  display: flex;
+
+}
+
+.search-box {
+  display: flex;
+  flex-basis: 70%;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.search-box input {
+  height: 30px;
+  width: 90%;
+  margin-top: 5px;
+  margin-left: 30px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.search-box button {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: #444;
+  display: inline-block;
+  font-size: 11px;
+  padding: 6px;
+  height: 30px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-left: 17px;
+}
+
+.bottom-social .social-icon {
+  display: flex;
+  flex-basis: 30%;
+  padding: 20px;
+}
+
+.social-icon .a2i {
+  border-right: 1px solid #e8e8e8;
+  padding-right: 10px;
+
+}
+
+.social-icon .a2i img {
+  width: 45px;
+}
+
+.all-social-icon {
+  margin-left: 10px;
+}
+
+.all-social-icon ul {
+  display: flex;
+  margin-left: 5px;
+}
+
+.all-social-icon label {
+  color: #683091;
+  font-size: 13px;
+}
+
+.all-social-icon a img {
+  padding: 1px;
+  width: 23px;
+  height: 21px;
+}
+
+/* ====================================================== */
+/* =============== Logo & social icon exit ============== */
+/* ====================================================== */
+
+/* ====================================================== */
+/* ======================= Navbar ======================= */
+/* ====================================================== */
+.navbar {
+  background-color: #efefef;
+  border-bottom: 1px solid white;
+  height: 37px;
+  padding: 1px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  padding: 5px 10px;
+  margin-right: 1px;
+  height: 37px;
+  position: relative;
+}
+
+.navbar ul .nav:after {
+  content: " ";
+  position: absolute;
+  border-left: 1px solid #aaa;
+  top: 14%;
+  right: 0;
+  height: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar ul li:hover a {
+  color: white;
+}
+
+.navbar ul .menu1:hover {
+  background-color: #70BF42;
+}
+
+.navbar ul .menu2:hover {
+  background-color: #C40A2A;
+}
+
+.navbar ul .menu3:hover {
+  background-color: #84154D;
+}
+
+.navbar ul .menu4:hover {
+  background-color: #1399BE;
+}
+
+.navbar ul .menu5:hover {
+  background-color: #6A0166;
+}
+
+.navbar ul .menu6:hover {
+  background-color: #000000;
+}
+
+.navbar ul .menu7:hover {
+  background-color: #FF6600;
+}
+
+.navbar ul .menu8:hover {
+  background-color: #C40A2A;
+}
+
+.navbar ul .menu9:hover {
+  background-color: #6A0166;
+}
+
+.navbar ul .menu10:hover {
+  background-color: #70BF42;
+}
+
+.navbar ul li a {
+  color: #525252;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+/* ====================================================== */
+/* ===================== Navbar exit ==================== */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* ==================== Main content ==================== */
+/* ====================================================== */
+.main {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.main .left-content {
+  flex-basis: 70%;
+  flex-direction: column;
+
+}
+
+.main .sidebar {
+  flex-basis: 30%;
+  margin-right: 2px;
+}
+
+.main .banner img {
+  width: 100%;
+  height: 300px;
+}
+
+.sidebar .image-banner {
+  display: flex;
+
+}
+
+.sidebar .image-banner li {
+  padding: 5px;
+}
+
+
+.news-here .marquee {
+  color: #000000;
+  height: 2.5vw;
+  overflow: hidden;
+  background-color: #E6E7E8;
+  position: relative;
+  padding: 5px 0px 0px 0px;
+  margin: 7px 0;
+}
+
+.news-here .marquee a {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+
+}
+
+/* ~~~~~~~~~~~~~ Image slider ~~~~~~~~~~~~ */
+.slider-image {
+  animation: reveal .3s ease-in-out;
+  -webkit-animation: reveal .3s ease-in-out;
+}
+
+.img {
+  display: none;
+  width: 100%;
+  height: 220px;
+}
+
+
+/* ~~~~~~~~~~~~~ Tab content ~~~~~~~~~~~~~ */
+.tab-container {
+  width: 96.5%;
+  padding: 0px 15px 10px 0px;
+  margin: 20px 0px 15px 10px;
+}
+
+.tab-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-menu ul li {
+  border: 1px solid #e8e8e8;
+
+}
+
+.tab-menu ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: #9E5BBA;
+  padding: 9px 15px 5px 15px;
+  color: #ffff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  -moz-border-radius: 3px 3px 0px 0px;
+  -ms-border-radius: 3px 3px 0px 0px;
+  -o-border-radius: 3px 3px 0px 0px;
+}
+
+.tab-menu ul li a.active-a,
+.tab-menu ul li a:hover {
+  background-color: #E8E8E8;
+  color: #9E5BBA;
+}
+
+.tab {
+  display: none;
+}
+
+.tab h2 {
+  color: rgba(0, 0, 0, .7);
+}
+
+.tab p {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: justify;
+}
+
+.tab-active {
+  display: block;
+}
+
+.tab-content {
+  border-radius: 3px;
+  border-top-left-radius: 0px;
+  padding-bottom: 30px;
+  width: 97%;
+  border: 1px solid #e8e8e8;
+}
+
+.tab-content .mytab {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.tab-content .tab-single-content {
+  width: calc(100% / 6);
+  text-align: center;
+}
+
+.tab-content .tab-single-content {
+  margin: 15px 0px;
+  height: 80px;
+}
+
+.tab-content .tab-single-content a p {
+  color: #297101;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+/* ~~~~~~~~~~~~~ Initivatives ~~~~~~~~~~~~ */
+
+.initivatives {
+  padding: 5px 10px;
+}
+
+.initivatives h5 {
+  color: #69308f;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.initivatives ul {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 2);
+}
+
+.initivatives .all-btn a {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.initivatives .all-btn a {
+  background-image: linear-gradient(to bottom, #666, #a6a6a6);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #A2A2A2;
+  padding: 0 5px;
+  width: 40px;
+  float: right;
+  font-size: 14px;
+  color: #ffff;
+}
+
+.initivatives ul li {
+  margin-bottom: 5px;
+  color: #2c7104;
+  border-bottom: 1px solid #73bf43;
+  padding: 2px 0px;
+}
+
+.initivatives ul li a {
+  font-size: 12px;
+  color: #333;
+}
+
+.initivatives ul li span {
+  font-size: 12px;
+}
+
+.initivatives ul li a:hover {
+  color: #72BF44;
+}
+
+.initivatives ul .all-btn {
+  justify-content: end
+}
+
+/* ~~~~~~~~~~~~~~~~ Portal ~~~~~~~~~~~~~~~ */
+.portal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portal .pimg {
+  width: calc(100% / 3);
+  padding: 10px;
+}
+
+.portal .pimg img {
+  height: 60px;
+  width: 214px;
+}
+
+/* ~~~~~~~~~~~ Popular service ~~~~~~~~~~~ */
+.service {
+  padding: 5px 10px;
+}
+
+.service .title {
+  color: #69308f;
+  margin-bottom: 10px;
+  font-size: 21px
+}
+
+.service .popular-service h5 {
+  color: #F17D00;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 2px;
+}
+
+.service .popular-service hr {
+  width: 200px;
+  height: 0;
+  background-color: #aaaa;
+  border: solid #ddd;
+  border-width: 1px 0 0;
+}
+
+.popular-service ul {
+  padding: 20px;
+}
+
+.popular-service ul li {
+  list-style-type: disc;
+}
+
+.popular-service ul li a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000;
+}
+
+.popular-service ul li:hover a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.popular-service .service-btn {
+  float: right;
+}
+
+.popular-service .service-btn a {
+  background-image: linear-gradient(to bottom, #666, #a6a6a6);
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #A2A2A2;
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffff;
+  margin-right: 10px;
+}
+
+/* ~~~~~~~~~~~~~~ Video list ~~~~~~~~~~~~~ */
+.video-list .title {
+  background-color: #609513;
+  padding: 10px;
+}
+
+.video-list .title-outbg {
+  background-color: transparent;
+}
+
+.video-list .title h5 {
+  font-size: 16.8px;
+  color: #ffff;
+  line-height: 24px;
+}
+
+.video-list .title-outbg h5 {
+  color: #6b2f91;
+
+}
+
+.video-list .video {
+  display: flex;
+  text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.video .single-video {
+  width: calc(100% / 3);
+}
+
+.single-video table p {
+  font-size: 14px;
+}
+
+/* ~~~~~~~~~~~~~~~ Sidebar ~~~~~~~~~~~~~~~ */
+.national-portal h4 {
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 4px;
+  padding: 10px;
+  color: #69308f;
+}
+
+.national-portal select {
+  width: 85%;
+  padding: 5px 0;
+}
+
+.national-portal input {
+  padding: 5px 2px;
+}
+
+.sidebar-video {
+  margin: 7px 0;
+}
+
+.sidebar-image img {
+  height: 200px;
+  width: 100%;
+}
+
+/* ====================================================== */
+/* ================== Main content exit ================= */
+/* ====================================================== */
+
+/* ====================================================== */
+/* ==================== Footer bg up ==================== */
+/* ====================================================== */
+.footer-up-bg {
+  margin-top: 20px;
+  background: url("../images/footer_top_bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 84px;
+  margin: 0 auto;
+  margin-top: 0px;
+  width: 1020px;
+  clear: both;
+}
+
+/* ====================================================== */
+/* ================== Footer bg up exit ================= */
+/* ====================================================== */
+
+/* ====================================================== */
+/* ======================= Footer ======================= */
+/* ====================================================== */
+.footer {
+  background: #EBEBEB;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .left-footer {
+  flex-basis: 75%;
+}
+
+.footer .right-footer {
+  flex-basis: 25%;
+}
+
+.footer ul {
+  display: flex;
+}
+
+.footer ul li a {
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer ul li:hover a {
+  text-decoration: underline;
+}
+
+.footer .left-footer ul li {
+  border-right: 1px solid #cccccc;
+  padding: 1px 5px;
+}
+
+.footer .left-footer .p {
+  font-size: 12px;
+  padding-top: 22px;
+}
+
+.right-footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .right-footer ul li {
+  font-size: 10px;
+  color: #000000;
+}
+
+.footer .right-footer ul li a {
+  font-size: 10px;
+  color: #000000;
+}
+
+.last-footer {
+  padding: 5px;
+}
+
+.last-footer p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #000000;
+}
+
+/* ====================================================== */
+/* ===================== Footer exit ==================== */
+/* ====================================================== */
